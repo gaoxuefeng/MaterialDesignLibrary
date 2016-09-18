@@ -18,8 +18,12 @@ allprojects {
         jcenter()
         mavenCentral()
     }
+    ext {
+        PUBLISH_GROUP_ID = 'com.github.gaoxuefeng'
+        PUBLISH_ARTIFACT_ID = 'MaterialDesignLibrary'
+        PUBLISH_VERSION = '1.5.1'
+    }
+    apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
 
-    group = "com.github.navasmdc"
-    version = "1.5.1"
 }
 
